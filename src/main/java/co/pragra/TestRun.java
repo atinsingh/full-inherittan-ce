@@ -1,6 +1,7 @@
 package co.pragra;
 
 import co.pragra.base.Person;
+import co.pragra.base.RectangleArea;
 import co.pragra.hrms.Employee;
 import co.pragra.hrms.Manager;
 
@@ -12,5 +13,10 @@ public class TestRun {
         System.out.println(p1.toString());
         System.out.println(emp.toString());
         System.out.println(manager.toString());
+
+        RectangleArea area  = new RectangleArea();
+        area.input();
+        System.out.println(area.area());
+        area.display();
     }
 }

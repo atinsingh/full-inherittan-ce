@@ -2,6 +2,8 @@ package co.pragra.hrms;
 
 import co.pragra.base.Person;
 
+import java.util.Scanner;
+
 public class Employee extends Person {
     private int empId;
     private double hourlyRate;
@@ -13,6 +15,8 @@ public class Employee extends Person {
     }
 
     public double calculateSalary(){
+        Scanner scanner = new Scanner(System.in);
+
         return hourlyRate*8*21;
     }
 
